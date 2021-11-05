@@ -1,0 +1,4 @@
+Version of the Fizzbuzz kata based on an approach described by Llewelyn Falco. The approach is to write a single unit test of fizzbuzz from one to some value (Llewellyn said 20, but I used 30 to get to the many "fizzbuzz" result), and an extremely naive implementation that returns the expected output (no logic, just a giant string!) The next steps are to incrementally create an implementation, without changing the test in any way and keeping the tests passing throughout. 
+
+The original idea was found on the Legacy Code Rocks podcast of May 4, 2017 "AATC 2017 Recap with Llewellyn Falco" at:
+https://www.legacycode.rocks/podcast-1/episode/6cae418a/aatc-2017-recap-with-llewellyn-falco
