@@ -22,5 +22,5 @@ def if_divisible_by_five_append_buzz(n, result):
     if n % 5 != 0: return result
     return result + "buzz"
 def if_length_is_zero_result_is_number(n, result):
-    if len(result) == 0: return str(n)
-    return result
+    if len(result) > 0: return result
+    return str(n)
