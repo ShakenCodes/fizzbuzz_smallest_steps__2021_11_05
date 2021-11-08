@@ -2,8 +2,6 @@
 def fizzbuzz_thirty():
     "Returns the first thirty responses to fizzbuzz"
     other_responses = \
-        "4\n" \
-        "buzz\n" \
         "fizz\n" \
         "7\n" \
         "8\n" \
@@ -30,14 +28,16 @@ def fizzbuzz_thirty():
         "29\n" \
         "fizzbuzz\n"
     calculated_response = ""
-    for x in range (1, 4):
+    for x in range (1, 6):
         calculated_response += fizzbuzz(x) + "\n"
     thirty_responses = calculated_response + other_responses
     return thirty_responses
 
 def fizzbuzz(n):
     "Calculates fizzbuzz for a given value"
-    if n %3 == 0:
+    if n % 3 == 0:
         return "fizz"
+    elif n % 5 == 0:
+        return "buzz"
     else:
         return str(n)
