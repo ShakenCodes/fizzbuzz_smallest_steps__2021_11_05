@@ -11,12 +11,14 @@ def fizzbuzz_thirty():
 
 def fizzbuzz(n):
     "Calculates fizzbuzz for a given value"
-    result = ""
-    if n % 3 == 0:
-        result += "fizz"
+    result = if_divisible_by_three_then_fizz(n)
     result = if_divisible_by_five_append_buzz(n, result)
     return if_length_is_zero_result_is_number(n, result)
 
+def if_divisible_by_three_then_fizz(n):
+    if n % 3 == 0:
+        return "fizz"
+    return ""
 def if_divisible_by_five_append_buzz(n, result):
     if n % 5 == 0:
         return result + "buzz"
