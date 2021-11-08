@@ -16,14 +16,11 @@ def fizzbuzz(n):
     return if_length_is_zero_result_is_number(n, result)
 
 def if_divisible_by_three_then_fizz(n):
-    if n % 3 == 0:
-        return "fizz"
+    if n % 3 == 0: return "fizz"
     return ""
 def if_divisible_by_five_append_buzz(n, result):
-    if n % 5 == 0:
-        return result + "buzz"
+    if n % 5 == 0: return result + "buzz"
     return result
 def if_length_is_zero_result_is_number(n, result):
-    if len(result) == 0:
-        return str(n)
+    if len(result) == 0: return str(n)
     return result
