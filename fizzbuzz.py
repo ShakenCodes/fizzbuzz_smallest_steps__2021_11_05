@@ -16,6 +16,9 @@ def fizzbuzz(n):
         result += "fizz"
     if n % 5 == 0:
         result += "buzz"
+    return if_length_is_zero_result_is_number(n, result)
+
+def if_length_is_zero_result_is_number(n, result):
     if len(result) == 0:
-        result = str(n)
+        return str(n)
     return result
