@@ -11,11 +11,11 @@ def fizzbuzz_thirty():
 
 def fizzbuzz(n):
     "Calculates fizzbuzz for a given value"
-    if n % 15 == 0:
-        return "fizzbuzz"
-    elif n % 3 == 0:
-        return "fizz"
-    elif n % 5 == 0:
-        return "buzz"
-    else:
-        return str(n)
+    result = ""
+    if n % 3 == 0:
+        result += "fizz"
+    if n % 5 == 0:
+        result += "buzz"
+    if len(result) == 0:
+        result = str(n)
+    return result
